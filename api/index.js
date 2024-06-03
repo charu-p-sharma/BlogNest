@@ -1,7 +1,8 @@
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import router from "./routes/user.route.js"
+import userRouter from "./routes/user.route.js"
+import authRouter from "./routes/auth.route.js"
 dotenv.config();
 
 mongoose
@@ -15,7 +16,8 @@ app.listen(3000, () => {
     console.log("Server is running on port 3000");
 });
 
-app.use("/api/user", router)
+app.use("/api/user", userRouter)
+app.use("/api/auth", authRouter)
 
 // app.get("/test", (req, res) => {
 //     res.json({ message: "Api is working" });
