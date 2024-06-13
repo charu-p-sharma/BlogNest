@@ -19,6 +19,6 @@ app.listen(3000, () => {
 app.use("/api/user", userRouter)
 app.use("/api/auth", authRouter)
 
-// app.get("/test", (req, res) => {
-//     res.json({ message: "Api is working" });
-// });
+app.get("/test", (req, res) => {
+    res.json({ message: "Api is working" });
+});
