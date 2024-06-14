@@ -15,7 +15,7 @@ const Header = () => {
         <span className=" rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-2 py-1 text-white">
           Blog
         </span>
-        Nest
+        <span className=" font-bold text-black">Nest</span>
       </Link>
       <form className="relative hidden lg:inline">
         <input
